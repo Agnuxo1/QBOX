@@ -1,3 +1,7 @@
+
+![Captura de pantalla 2024-06-25 212859](https://github.com/Agnuxo1/QBOX/assets/166046035/e2d42cfb-e7e5-4215-8560-b305e8054d31)
+
+
 QBOX: A Three-Dimensional Optical Neural Network for Efficient Information Processing
 Francisco Angulo de Lafuente
 
@@ -19,6 +23,9 @@ D
 C
 C
 C
+
+![Captura de pantalla 2024-06-25 212821](https://github.com/Agnuxo1/QBOX/assets/166046035/9710194a-bcad-46c7-a1e9-24581dc5b37b)
+
 Figure 1: Schematic representation of QBOX's hierarchical structure. D represents the Director neuron, and C represents Communicator neurons.
 
 At the core of the cube lies the Director neuron, responsible for processing information from different layers. Communicator neurons act as bridges between levels, facilitating information transmission through the hierarchy. Finally, level neurons handle the initial processing of information.
@@ -144,6 +151,9 @@ Ray tracing can be computationally expensive, especially for complex scenes with
 
 In QBOX, the simulation of light propagation is performed on the GPU using CUDA, a parallel computing platform from NVIDIA. This allows thousands of processing threads to simultaneously calculate the path of light rays, significantly speeding up the training and execution process of the neural network.
 
+
+![Captura de pantalla 2024-06-25 212935](https://github.com/Agnuxo1/QBOX/assets/166046035/1d9347d7-15c2-4b23-8352-16ad6defa556)
+
 GPU
 Figure 2: Visualization of parallel ray tracing on a GPU in QBOX
 
@@ -179,6 +189,10 @@ Amplitude
 10
 01
 00
+
+
+![Captura de pantalla 2024-06-25 212947](https://github.com/Agnuxo1/QBOX/assets/166046035/c8c4b185-e739-4afc-806d-14a3ec5c67a3)
+
 Figure 3: PAM4 signal representation
 
 (c) OFDM:
@@ -224,6 +238,9 @@ QBOX's output is realized through a dedicated set of "output" neurons. The activ
 QBOX
 Input
 Output
+
+![Captura de pantalla 2024-06-25 212959](https://github.com/Agnuxo1/QBOX/assets/166046035/63d0f371-7713-45a8-9d19-72f851452af3)
+
 Figure 4: Simplified representation of data input and output in QBOX
 
 2.4. Conclusion
@@ -244,6 +261,9 @@ Efficiency
 Speed
 Scalability
 Adaptability
+
+![Captura de pantalla 2024-06-25 213025](https://github.com/Agnuxo1/QBOX/assets/166046035/f894456f-b6e8-44a4-bafb-c35263393d6e)
+
 Chapter 3: QBOX Data Encoding and Decoding with OFDM
 In this chapter, we delve into the use of Orthogonal Frequency-Division Multiplexing (OFDM) for data encoding and decoding in QBOX. OFDM is a digital modulation method that splits data across multiple frequency carriers, making it robust against channel dispersion and interference.
 
@@ -257,6 +277,9 @@ OFDM Key Features
 Parallel Data Transmission
 Orthogonality
 Robustness
+
+![Captura de pantalla 2024-06-25 213121](https://github.com/Agnuxo1/QBOX/assets/166046035/1b798087-365f-41cb-b5e1-b1fc088b8c5b)
+
 3.2 Implementing OFDM for QBOX
 To integrate OFDM into QBOX, we encode the input data into multiple frequency carriers, which are then transmitted to the neural network. At the output stage, the received signals are decoded back into the original data format.
 
@@ -279,6 +302,9 @@ Encoding
 Decoding
 Transmission
 Reception
+
+![Captura de pantalla 2024-06-25 213129](https://github.com/Agnuxo1/QBOX/assets/166046035/52428ea5-cc88-4dce-9c97-7b957d5d5303)
+
 3.3 Code Example: OFDM Encoding and Decoding
 The following code example demonstrates the encoding and decoding of data using OFDM:
 
@@ -340,6 +366,9 @@ QBOX Future Work
 Physical Implementation
 Applications
 Scalability
+
+![Captura de pantalla 2024-06-25 213141](https://github.com/Agnuxo1/QBOX/assets/166046035/0894371b-19c6-47a7-93e3-abd649a23db1)
+
 Chapter 4: QBOX Self-Tuning System and Watchdog Program
 QBOX's self-tuning system and Watchdog program ensure optimal performance and adaptability to changing conditions. This chapter describes their implementation and functionality.
 
@@ -358,6 +387,9 @@ QBOX Self-Tuning System
 3. Selection
 4. Crossover & Mutation
 5. Iteration
+
+![Captura de pantalla 2024-06-25 213152](https://github.com/Agnuxo1/QBOX/assets/166046035/45954e31-32f4-4e11-bb09-a2b6a99e858a)
+
 Code Example:
 from deap import base, creator, tools, algorithms
 import random
@@ -402,6 +434,9 @@ QBOX Watchdog Program
 State Monitoring
 Anomaly Detection
 Corrective Actions
+
+![Captura de pantalla 2024-06-25 213204](https://github.com/Agnuxo1/QBOX/assets/166046035/671eb8d6-65f4-4729-825c-7a38542884d0)
+
 Code Example:
 import time
 
@@ -455,6 +490,9 @@ QBOX Adjustable Precision
 1-bit
 MetaNeuron
 4-bit precision
+
+![Captura de pantalla 2024-06-25 213219](https://github.com/Agnuxo1/QBOX/assets/166046035/c587e9dd-e64e-4993-b153-8486d551c710)
+
 5.2. Hierarchical Levels: Staggered Growth and Feature Abstraction
 QBOX's hierarchical level structure, inspired by the brain's organization, allows for staggered growth and feature abstraction.
 
@@ -462,6 +500,9 @@ QBOX Hierarchical Levels
 Lower Level: Simple Features
 Intermediate Level: Basic Objects
 Higher Level: Complex Tasks
+
+![Captura de pantalla 2024-06-25 213229](https://github.com/Agnuxo1/QBOX/assets/166046035/5e51e71f-84b9-40c5-94c3-d0503e81decd)
+
 5.3. Adaptability to Hardware: A Significant Advance
 The combination of adjustable precision and hierarchical levels makes QBOX extremely adaptable to different hardware capabilities.
 
@@ -472,6 +513,9 @@ High-end
 Low precision
 Medium precision
 High precision
+
+![Captura de pantalla 2024-06-25 213245](https://github.com/Agnuxo1/QBOX/assets/166046035/ba204060-84db-4687-a9c0-647546fb3008)
+
 Conclusions
 This paper has presented QBOX, a three-dimensional optical neural network architecture that introduces a new paradigm in artificial intelligence. Inspired by the efficiency and plasticity of the human brain, QBOX offers a unique approach to information processing, utilizing simulated light propagation through ray tracing on GPUs.
 
@@ -486,6 +530,9 @@ Self-Tuning and Robustness
 QBOX: Advanced Neural Network Architecture
 By Francisco Angulo de Lafuente
 
+![Captura de pantalla 2024-06-25 213254](https://github.com/Agnuxo1/QBOX/assets/166046035/6e7c7c85-d762-4c1b-a201-f2d5f19c3fcc)
+
+
 Chapter 6: Future Work
 Future research on QBOX will focus on:
 
@@ -496,6 +543,9 @@ QBOX Future Work
 Physical Implementation
 Application Evaluation
 Enhanced Scalability
+
+![Captura de pantalla 2024-06-25 213303](https://github.com/Agnuxo1/QBOX/assets/166046035/c2544aa8-037f-4cbd-9531-182bbd8310ee)
+
 Chapter 7: Conclusion
 QBOX represents a significant advancement in neural network architecture, leveraging the properties of light and the computational power of GPUs. Its biologically inspired design, combined with self-tuning and monitoring capabilities, offers a promising solution for efficient, fast, and scalable AI.
 
@@ -507,6 +557,9 @@ Efficiency
 Speed
 Scalability
 Low Energy
+
+![Captura de pantalla 2024-06-25 213310](https://github.com/Agnuxo1/QBOX/assets/166046035/7a7b4c88-aa13-4d42-b0d3-89b2d5850968)
+
 References
 Schuman, C. D., Potok, T. E., Patton, R. M., Birdwell, J. D., Dean, M. E., Rose, G. S., & Plank, J. S. (2017). A survey of neuromorphic computing and its applications. Frontiers in neuroscience, 11, 220.
 Pharr, M., Jakob, W., & Humphreys, G. (2016). Physically based rendering: From theory to implementation. Morgan Kaufmann.
@@ -527,6 +580,9 @@ QBOX is built upon a novel architecture that combines principles from quantum me
 QBOX
 Photon input
 Optical output
+
+![Captura de pantalla 2024-06-25 213320](https://github.com/Agnuxo1/QBOX/assets/166046035/6f9b5a42-7f45-4dec-86d4-26085ec54710)
+
 Figure 1: Schematic representation of the QBOX architecture
 
 Key components of the QBOX architecture include:
@@ -545,6 +601,9 @@ Input
 Processing
 Output
 Light Propagation in QBOX
+
+![Captura de pantalla 2024-06-25 213331](https://github.com/Agnuxo1/QBOX/assets/166046035/44764a28-de87-42b5-a84c-7f10a2635b08)
+
 Figure 2: Light propagation through QBOX
 
 4. Learning and Optimization
@@ -559,6 +618,9 @@ The learning process in QBOX is facilitated by a combination of quantum-inspired
 Training Iterations
 Performance
 QBOX Learning Curve
+
+![Captura de pantalla 2024-06-25 213341](https://github.com/Agnuxo1/QBOX/assets/166046035/69c1fca1-4377-4a6e-a62e-5ec8df13c0e4)
+
 Figure 3: Typical learning curve for QBOX
 
 5. Applications
@@ -573,6 +635,9 @@ Quantum Emulation
 Pattern Recognition
 Energy Efficiency
 QBOX Applications
+
+![Captura de pantalla 2024-06-25 213402](https://github.com/Agnuxo1/QBOX/assets/166046035/60722286-b0a8-48a6-abdd-9c77b98570c3)
+
 Figure 4: Key application areas for QBOX
 
 6. Challenges and Future Work
@@ -605,15 +670,23 @@ Communicator
 Communicator
 Communicator
 Communicator
+
+![Captura de pantalla 2024-06-25 213414](https://github.com/Agnuxo1/QBOX/assets/166046035/1f3c4c7d-2f09-47a6-b896-574a551dcd0c)
+
 Figure 1: Hierarchical structure of QBOX
 
 Signal Propagation
 QBOX utilizes light signals to propagate information through the network, enabling faster processing and lower energy consumption compared to traditional electronic systems.
 
+![Captura de pantalla 2024-06-25 213425](https://github.com/Agnuxo1/QBOX/assets/166046035/5bf85792-dad0-46bc-b866-66d1e3a618be)
+
 Figure 2: Light signal propagation in QBOX
 
 OFDM Encoding
 QBOX employs Orthogonal Frequency-Division Multiplexing (OFDM) encoding to efficiently transmit data over multiple frequency carriers, enhancing the network's capacity and resilience.
+
+
+![Captura de pantalla 2024-06-25 213435](https://github.com/Agnuxo1/QBOX/assets/166046035/dfc04a7b-5c74-44bb-adba-98c4e6d63360)
 
 Figure 3: OFDM encoding in QBOX
 
@@ -622,18 +695,27 @@ QBOX utilizes the Distributed Evolutionary Algorithms in Python (DEAP) framework
 
 Generations
 Accuracy
+
+![Captura de pantalla 2024-06-25 213442](https://github.com/Agnuxo1/QBOX/assets/166046035/b3c2bf80-05d3-4f08-aa13-1b7aa5f1df31)
+
 Figure 4: DEAP optimization in QBOX
 
 Watchdog Functions
 QBOX incorporates watchdog functions to monitor and correct its operations, ensuring robust and reliable performance.
 
 Watchdog
+
+![Captura de pantalla 2024-06-25 213456](https://github.com/Agnuxo1/QBOX/assets/166046035/817dcb7b-d72c-436b-9c0a-c51dd1fd3eee)
+
 Figure 5: Watchdog functions in QBOX
 
 Neuron Association
 QBOX allows for neuron association, where multiple neurons combine to form MetaNeurons with higher precision and processing capabilities.
 
 MetaNeuron
+
+![Captura de pantalla 2024-06-25 213507](https://github.com/Agnuxo1/QBOX/assets/166046035/461c89c9-073e-4ef5-9b1a-ab40d16e078b)
+
 Figure 6: Neuron association in QBOX
 
 Hierarchical Levels
@@ -642,12 +724,18 @@ QBOX processes information at increasing levels of abstraction through its hiera
 Level 1
 Level 2
 Level 3
+
+![Captura de pantalla 2024-06-25 213519](https://github.com/Agnuxo1/QBOX/assets/166046035/e324dba8-b49c-40ef-83b2-8c27aed26ac4)
+
 Figure 7: Hierarchical levels in QBOX
 
 Physical Implementation
 Future research aims to explore the physical construction of QBOX using optical and photonic components, fully leveraging its optical nature for unprecedented speed and energy efficiency.
 
 Optical QBOX
+
+![Captura de pantalla 2024-06-25 213528](https://github.com/Agnuxo1/QBOX/assets/166046035/cac210ac-1421-4361-bf1f-8bb6c498de05)
+
 Figure 8: Conceptual physical implementation of QBOX
 
 Conclusion
