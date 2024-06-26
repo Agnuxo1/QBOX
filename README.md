@@ -743,6 +743,10 @@ QBOX represents a new horizon in the quest for more efficient, scalable, and ada
 
 
 
-https://github.com/Agnuxo1/QBOX/assets/166046035/a87802f5-d60f-4bb0-a68b-38d33f3a45ce
+           
+
+https://github.com/Agnuxo1/QBOX/assets/166046035/bdd19d3a-b4b1-484b-ac38-bf9329fcc840
+
+
 
 
